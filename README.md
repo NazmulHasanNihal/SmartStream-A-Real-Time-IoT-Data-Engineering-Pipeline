@@ -193,6 +193,7 @@ uvicorn
 streamlit
 pandas
 apache-flink
+altair
 ```
 ### 🔧 How to Use
 **Bash**
