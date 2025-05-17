@@ -5,5 +5,4 @@ fastapi
 uvicorn
 streamlit
 pandas
-apache-flink
 altair
