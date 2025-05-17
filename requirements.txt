@@ -1,0 +1,17 @@
+# Kafka Producer / Consumer
+kafka-python
+
+# PostgreSQL Connector
+psycopg2-binary
+sqlalchemy
+
+# Web API
+fastapi
+uvicorn
+
+# Dashboard
+streamlit
+pandas
+
+# Flink (for PyFlink jobs)
+apache-flink
