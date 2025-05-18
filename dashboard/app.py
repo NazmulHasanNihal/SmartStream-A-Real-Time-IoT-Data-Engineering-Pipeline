@@ -9,7 +9,7 @@ import altair as alt
 st.set_page_config(page_title="IoT Sensor Dashboard", layout="wide")
 
 # PostgreSQL connection
-engine = create_engine("postgresql+psycopg2://iot_user:iot_pass@postgres/iot")
+engine = create_engine("psql -h db.vdyssjivlmdqhytitblh.supabase.co -p 5432 -d postgres -U postgres")
 
 st.title("📡 IoT Sensor Monitoring Dashboard")
 
