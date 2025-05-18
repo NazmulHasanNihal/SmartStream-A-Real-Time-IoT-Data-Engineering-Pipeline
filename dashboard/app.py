@@ -11,7 +11,7 @@ st.set_page_config(page_title="IoT Sensor Dashboard", layout="wide")
 
 st.experimental_set_query_params()
 st_autorefresh = st.experimental_rerun
-st_autorefresh_interval = 20000 
+st_autorefresh_interval = 2000 
 
 # PostgreSQL connection
 db_uri = (
