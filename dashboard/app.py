@@ -4,12 +4,18 @@ from sqlalchemy import create_engine
 from datetime import datetime
 import time
 import altair as alt
+import os
 
 # Page setup
 st.set_page_config(page_title="IoT Sensor Dashboard", layout="wide")
 
 # PostgreSQL connection
-engine = create_engine("psql -h db.vdyssjivlmdqhytitblh.supabase.co -p 5432 -d postgres -U postgres")
+db_uri = (
+    f"postgresql+psycopg2://{os.getenv('SUPABASE_USER')}:{os.getenv('SUPABASE_PASSWORD')}"
+    f"@{os.getenv('SUPABASE_HOST')}:{os.getenv('SUPABASE_PORT')}/{os.getenv('SUPABASE_DB')}"
+)
+
+engine = create_engine(db_uri, connect_args={"sslmode": "require"})
 
 st.title("📡 IoT Sensor Monitoring Dashboard")
 
