@@ -20,7 +20,7 @@ engine = create_engine(db_uri, connect_args={"sslmode": "require"})
 st.title("📡 IoT Sensor Monitoring Dashboard")
 
 # Auto-refresh every 2 seconds (adjustable)
-st_autorefresh = st.experimental_rerun  # only here for reference
+st_autorefresh = st.experimental_rerun
 refresh_interval = 2  # seconds
 
 # KPI section
