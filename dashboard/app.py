@@ -9,13 +9,14 @@ import os
 # Page setup
 st.set_page_config(page_title="IoT Sensor Dashboard", layout="wide")
 
-# Supabase PostgreSQL connection string
+# Use the IPv4-compatible pooler URI
 db_uri = (
     f"postgresql+psycopg2://{os.getenv('SUPABASE_USER')}:{os.getenv('SUPABASE_PASSWORD')}"
-    f"@{os.getenv('SUPABASE_HOST')}:{os.getenv('SUPABASE_PORT')}/{os.getenv('SUPABASE_DB')}"
+    f"@{os.getenv('SUPABASE_POOLER_HOST')}:{os.getenv('SUPABASE_PORT')}/{os.getenv('SUPABASE_DB')}"
 )
 
 engine = create_engine(db_uri, connect_args={"sslmode": "require"})
+
 
 # App title
 st.title("📡 IoT Sensor Monitoring Dashboard")
