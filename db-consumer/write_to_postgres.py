@@ -35,7 +35,7 @@ for _ in range(10):
             user='postgres',
             password='nC3myTyj1UKaDJbV',
             host='aws-0-ap-south-1.pooler.supabase.com',
-            port='5432'
+            port='6543'
         )
         cursor = conn.cursor()
         print("✅ Connected to PostgreSQL")
