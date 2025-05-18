@@ -1,6 +1,9 @@
 # 📡 SmartStream: A Real Time IoT Data Engineering Pipeline
 A real-time IoT data pipeline using Kafka, Flink, PostgreSQL, FastAPI, and Streamlit. Simulates sensor data, processes streams with Flink, stores results in PostgreSQL, serves live data via WebSocket API, and visualizes metrics on a real-time dashboard. Fully Dockerized.
 
+![Smart Stream Dashboard](SmartStreamDashboard.gif)
+
+
 ## 🎯 Project Motive
 In today’s digital world, millions of IoT devices produce sensor data every second. Companies need real-time pipelines to monitor, process, and act on this data instantly. This project was built to demonstrate the practical skills needed to engineer a real-time data pipeline from ingestion to dashboard using modern tools.
 
